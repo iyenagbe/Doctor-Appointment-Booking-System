@@ -6,7 +6,8 @@ import Login from './pages/Login'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import Profile from './pages/Profile'
-import Appiontments from './pages/Appointments'
+import Appointments from './pages/Appointments'
+import MyAppointments from './pages/MyAppointments'
 
 
 
@@ -23,7 +24,8 @@ const App = () => {
           < Route path='/about' element={<About/>} />
           < Route path='/contact' element={<Contact/>} />
           < Route path='/profile' element={<Profile/>} />
-          < Route path='/appiontments' element={<Appiontments/>} />
+          < Route path='/my-appointments' element={<MyAppointments/>} />
+          < Route path='/appointments/:docId' element={<Appointments/>} />
           
       </Routes>
        
