@@ -1,2 +1,77 @@
-
 @import "tailwindcss";
+
+.active hr{
+    @apply block
+}
+
+@theme {
+  /* ==========================================
+     WELLCARE BLUE
+     ========================================== */
+
+  --color-blue-50: #eff6ff;
+  --color-blue-100: #dbeafe;
+  --color-blue-200: #bfdbfe;
+  --color-blue-300: #93c5fd;
+  --color-blue-400: #60a5fa;
+  --color-blue-500: #0042b0;
+  --color-blue-600: #003a9b;
+  --color-blue-700: #003287;
+  --color-blue-800: #002970;
+  --color-blue-900: #001f59;
+
+
+  /* ==========================================
+     WELLCARE RED
+     ========================================== */
+
+  --color-red-50: #fff1f3;
+  --color-red-100: #ffe4e8;
+  --color-red-200: #ffc9d1;
+  --color-red-300: #ff9eac;
+  --color-red-400: #f95f76;
+  --color-red-500: #f32347;
+  --color-red-600: #d91d3d;
+  --color-red-700: #b81734;
+  --color-red-800: #99162f;
+  --color-red-900: #7f152b;
+
+
+  /* ==========================================
+     WELLCARE GRAY
+     ========================================== */
+
+  --color-gray-50: #f8fafc;
+  --color-gray-100: #f1f5f9;
+  --color-gray-200: #e2e8f0;
+  --color-gray-300: #cbd5e1;
+  --color-gray-400: #94a3b8;
+  --color-gray-500: #64748b;
+  --color-gray-600: #475569;
+  --color-gray-700: #334155;
+  --color-gray-800: #1e293b;
+  --color-gray-900: #0f172a;
+
+
+  /* ==========================================
+     FONT
+     ========================================== */
+
+  --font-sans: "Inter", "Poppins", sans-serif;
+}
+
+
+/* ==========================================
+   GLOBAL STYLES
+   ========================================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: #0f172a;
+  font-family: "Inter", "Poppins", sans-serif;
+}
