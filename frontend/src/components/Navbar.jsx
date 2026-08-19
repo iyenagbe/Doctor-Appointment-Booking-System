@@ -13,7 +13,7 @@ const Navbar = () => {
             </NavLink>
 
             <NavLink>
-                <li className='py-1'>ALL Doctors</li>
+                <li className='py-1'>All Doctors</li>
                 <hr className='border-none outline-none h-0.5 bg-primary w-3/5 m-auto' />
             </NavLink>
 
