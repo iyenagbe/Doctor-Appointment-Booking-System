@@ -14,7 +14,7 @@ const Header = () => {
                 <img className='w-27' src={assets.group_profiles} alt="" />
                 <p>Simplify your healthcare experience</p>
             </div>
-            <a href='#speciality' className='flex items-center gap-2 bg-white rounded-full px-8 py-3 text-gray-600 text-sm m-auto md:m-0 hover:scale-105 transition-all duration-300'>
+            <a href='#specialist' className='flex items-center gap-2 bg-white rounded-full px-8 py-3 text-gray-600 text-sm m-auto md:m-0 hover:scale-105 transition-all duration-300'>
                 Book an appointment <img className='w-3' src={assets.arrow_icon} alt="" />
 
             </a>
