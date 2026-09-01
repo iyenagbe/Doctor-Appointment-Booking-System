@@ -4,6 +4,10 @@
     @apply block
 }
 
+::-webkit-scrollbar{
+   @apply hidden
+}
+
 @theme {
   /* ==========================================
      WELLCARE BLUE
