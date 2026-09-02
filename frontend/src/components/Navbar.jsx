@@ -51,9 +51,11 @@ const Navbar = () => {
                     token ? <dvi className='flex items-center gap-2 cursor-pointer group relative' onClick={() => setShowMenu(!showMenu)}>
                         <img src={assets.profile_pic} className='w-8 rounded-full'/>
                         <img src={assets.dropdown_icon} className='w-2\.5' />
+                        
                         <div className='absolute top-10 right-0 pt-13 text-base font-medium text-gray-600 z-20 h bg-white shadow-md rounded-md p-2 hidden group-hover:block'>
                             <div className='min-w-48 rounded flex flex-col gap-2 p-2'>
                                 <p onClick={() => navigate('/profile')} className='hover:text-blue-500 p-2 rounded cursor-pointer'>Profile</p>
+
                                 <p onClick={() => navigate('/appointments')} className='hover:text-blue-500 p-2 rounded cursor-pointer'>My Appointments</p>
                                 <p onClick={() => setToken(false)} className='hover:text-blue-500 p-2 rounded cursor-pointer'>Logout</p>
                             </div>
