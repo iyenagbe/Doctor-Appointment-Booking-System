@@ -13,7 +13,7 @@ const Specialist = () => {
         <div className='flex sm:justify-center gap-4 pt-5 w-full overflow-scroll'>
             {specialistData.map((item, index) => (
 
-              <Link className='flex flex-col items-center text-xs cursor-pointer flex-shrink-0 hover:translate-y-[-10px] transition-all duration-500' key={index} to={`/doctors/${item.Specialist}`} >
+              <Link onClick={() => scrollTo(0,0)} className='flex flex-col items-center text-xs cursor-pointer flex-shrink-0 hover:translate-y-[-10px] transition-all duration-500' key={index} to={`/doctors/${item.Specialist}`} >
                 <img className='w-16 sm:w-24 mb-2' src={item.image} alt='' />
                 <p>{item.Specialist}</p>
               </Link>
