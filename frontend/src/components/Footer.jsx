@@ -12,7 +12,7 @@ const Footer = () => {
             {/* Footer Left content */}
             <div>
                 <img className='mb-5 w-60' src={assets.logo} alt="wellcare" />
-                <p className='w-full md:w-2/3 text-gray-600 leading-6'>Your Health is Our Priority</p>
+                <p className='w-full md:w-2/3 text-gray-600 leading-6'>Your health matters to us. Discover reliable health information, practical wellness tips, and science-backed insights designed to help you make better choices for a healthier tomorrow.</p>
             </div>
 
             {/* Footer center content */}
