@@ -1,7 +1,9 @@
-import React, { useContext, useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { AppContext } from '../context/AppContext'
 import { assets } from '../assets/assets'
+import RelatedDoctors from '../components/RelatedDoctors'
+
 
 const Appointments = () => {
 
@@ -117,10 +119,18 @@ const Appointments = () => {
         </div>
           <div className='flex items-center gap-3 w-full overflow-x-scroll mt-4'>
             {docSlots.length && docSlots[slotIndex].map((item, index) => {
-              return <p className='text-sm font-light flex-shrink-0 px-5 py-2 rounded-full cursor-pointer' key={index}>{item.time.toLowerCase() }</p>
+              return <p onClick={() => setSlotTime(item.time)} className={`text-sm font-light flex-shrink-0 px-5 py-2 rounded-full cursor-pointer ${item.time === slotTime ? 'bg-blue-500 text-white' : 'text-gray-400 border border-gray-300'}`} key={index}>{item.time.toLowerCase() }</p>
             })}
           </div>
+
+          <button className='bg-blue-500 text-white text-sm font-light py-3 px-12 my-6 rounded-full cursor-pointer mt-5 hover:bg-blue-600'>
+            Book Appointment
+          </button>
       </div>
+
+
+      {/*---Related Doctors---*/}
+      <RelatedDoctors docId={docId} specialist={docInfo.Specialist} />
     </div>
   )
 }
