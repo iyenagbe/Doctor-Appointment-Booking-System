@@ -8,8 +8,8 @@ const About = () => {
 
 
     <div>
-      <div className='text-center text-2xl font-bold text-gray-800 pt-10'>
-        <p> About <span className='text-gray-700 font-medium'>Us</span></p>
+      <div className='text-center text-2xl font-bold text-gray-900 pt-10'>
+        <p> About <span className='text-gray-900 font-medium'>Us</span></p>
       </div>
 
       <div className='my-10 flex flex-col md:flex-row gap-10'>
