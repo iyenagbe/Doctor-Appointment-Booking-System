@@ -2,37 +2,38 @@ import React, { useContext } from 'react'
 import { AppContext } from '../context/AppContext'
 
 
+
 const MyAppointments = () => {
 
   const { doctors } = useContext(AppContext)
 
   return (
 
-    <div>
+    <div className='pb-3 mt-12 font-medium text-zinc-700 '>
       <p>My Appointments</p>
       <div>
         {
           doctors.slice(0, 2).map((item, index) => (
-            <div key={index}>
+            <div className='grid grid-cols-[1fr_2fr] gap-3 sm:flex sm:gap-5 py-2 ' key={index}>
               <div>
-                <img src={item.image} alt="" />
+                <img className='w-30 bg-blue-500' src={item.image} alt="" />
               </div>
-              <div>
-                <p>{item.name}</p>
+              <div className='flex-1 text-sm text-zinc-600'>
+                <p className='text-neutral-800 font-semibold'>{item.name}</p>
                 <p>{item.specialist}</p>
-                <p>Address:</p>
-                <p>{item.address.line1}</p>
-                <p>{item.address.line2}</p>
-                <p><span>Date & Time:</span>  19, November, 2026  |  8:40  PM</p>
+                <p className='text-zinc-600 font-semibold mt-1'>Address:</p>
+                <p className='text-xm'>{item.address.line1}</p>
+                <p className='text-xs'>{item.address.line2}</p>
+                <p className='text-sm mt-1'><span className='text-sm text-neutral-600 font-medium'>Date & Time:</span>  19, November, 2026  |  8:40  PM</p>
               </div>
 
               <div>
 
               </div>
 
-              <div>
-                <button>Pay Online</button>
-                <button>Cancel appointment</button>
+              <div className='flex flex-col gap-2 justify-end'>
+                <button className='text-sm text-stone-500 text-center sm:min-w-48 py-2 border rounded hover:bg-blue-500 hover:text-white transition-all duration-300'>Pay Online</button>
+                <button className='text-sm text-stone-500 text-center sm:min-w-48 py-2 border rounded hover:bg-red-600 hover:text-white transition-all duration-300'>Cancel appointment</button>
               </div>
 
             </div>
