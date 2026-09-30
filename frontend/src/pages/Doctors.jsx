@@ -26,6 +26,7 @@ const Doctors = () => {
     <div>
       <p className='text-gray-600 text-2xl'>Browse through our list of specialists.</p>
       <div className='flex flex-col gap-4 sm:flex-row items-start mt-5'>
+        
         <div className='flex flex-col gap-4 text-sm text-gray-600'>
 
           <p onClick={() => specialist === 'General physician' ? navigate('/doctors') : navigate('/doctors/')} className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer ${specialist === 'General physician' ? 'bg-indigo-100 text-black' : ''}`}>General physician</p>
